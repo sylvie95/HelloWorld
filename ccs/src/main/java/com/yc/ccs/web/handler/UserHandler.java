@@ -42,7 +42,7 @@ public class UserHandler {
 			helper.setSubject("找回密码");
 			String hrefStr = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getServletContext().getContextPath() + "/user/getpassword?username=" + username;
 			System.out.println(hrefStr);
-			helper.setText("<a href='" + hrefStr + "'>找回密码</a><br>如果连接不可用拷贝" + hrefStr + "到地址栏...", true);
+			helper.setText("<a href='" + hrefStr + "'>找回密码</a><br>如果连接不可用拷贝" + hrefStr + " 到地址栏...", true);
 			mailSender.send(message);
 		} catch (MessagingException e) {
 			e.printStackTrace();
