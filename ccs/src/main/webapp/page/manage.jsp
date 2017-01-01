@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<base href="/News30/">
+<base href="/ccs/">
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link type="text/css" rel="stylesheet" href="easyui/themes/icon.css">
@@ -12,20 +12,20 @@
 <link href="css/manage.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="easyui-layout" style="width: 960px; margin: 0px auto;">
-	<div data-options="region:'north'" style="height: 138px;">
+	<div data-options="region:'north'" style="height: 60px;">
 		<div id="header">
 			<div id="top_login">
-				<label> 欢迎【<span>${loginUser.uname}</span>】使用新闻系统系统
+				<label> 欢迎【<span>${loginUser.username}</span>】使用银行信用管理系统
 				</label> <img src="images/friend_logo.gif" alt="Google" id="friend_logo" />
 			</div>
-			<div id="nav">
+			<!-- <div id="nav">
 				<div id="logo">
 					<img src="images/logo.jpg" alt="新闻中国" />
 				</div>
 				<div id="a_b01">
 					<img src="images/a_b01.gif" alt="" />
 				</div>
-				<!--mainnav end-->
+				mainnav end -->
 			</div>
 		</div>
 	</div>
@@ -33,10 +33,10 @@
 		<div id="footer">
 			<p class="">
 				24小时客户服务热线：010-68988888 &#160;&#160;&#160;&#160; <a href="#">常见问题解答</a> &#160;&#160;&#160;&#160;
-				新闻热线：010-627488888 <br /> 文明办网文明上网举报电话：010-627488888 &#160;&#160;&#160;&#160; 举报邮箱： <a href="#">jubao@jb-aptech.com.cn</a>
+				新闻热线：010-627488888 <br /> 文明办网文明上网举报电话：010-627488888 &#160;&#160;&#160;&#160; 举报邮箱： <a href="#">108449666@qq.com</a>
 			</p>
 			<p class="copyright">
-				Copyright &copy; 1999-2009 News China gov, All Right Reserver <br /> 新闻中国 版权所有
+				Copyright &copy; 1999-2009 CCS China gov, All Right Reserver <br /> 新闻中国 版权所有
 			</p>
 		</div>
 	</div>
@@ -80,7 +80,7 @@
 		<div id="main" style="width: 500px; height: 250px;">
 			<div title="欢迎">
 				<h1 style="width: 100%; text-align: center; margin-top: 80px">
-					<label> 欢迎【<span>${loginUser.uname}</span>】使用新闻系统系统
+					<label> 欢迎【<span>${loginUser.username}</span>】使用银行信用管理系统 
 					</label>
 				</h1>
 			</div>

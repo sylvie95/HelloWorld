@@ -74,3 +74,23 @@ function full(){
 function unfull(){
 	$("body").layout("unfull");
 }
+
+//推送处理
+var socket = new WebSocket('ws://' + window.location.host + '/ccs/pushmsg');
+
+//接收推送消息
+socket.onmessage = function(message){
+//	alert("来消息了: " + message.data);
+	$.messager.alert('信用卡消息',message.data,'warning');
+
+
+}
+
+socket.onopen = function(){
+//	alert("连接了");
+//	socket.send("admin is come in !!!");
+}
+
+socket.onclose = function(){
+	alert("关闭了");
+}
